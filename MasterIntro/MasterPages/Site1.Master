@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MasterIntro.MasterPages.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 180px;
+            height: 78px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            ASP.Net Intro For Real Beginners...<br />
+            <br />
+            <img alt="begin" class="auto-style1" src="../Images/beginner.jpg" /><br />
+            <br />
+            <a href="../Default.aspx">Home</a> | <a href="../AnotherOne.aspx">Another</a><br />
+            &nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <br />
+            <br />
+
+            By Travis Mix
+
+            <br />
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
